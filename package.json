@@ -12,7 +12,7 @@
     "yargs": "^17.0.1"
   },
   "name": "sitemap-check",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tool to parse and check sitemap URLs for problems such as broken XML or 404 errors",
   "main": "main.js",
   "scripts": {
@@ -21,6 +21,9 @@
   "bin": {
     "sitemap-check": "./build/main.js"
   },
+  "files": [
+    ".build/*"
+  ],
   "keywords": [
     "sitemap",
     "sitemap-check"

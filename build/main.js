@@ -80,6 +80,9 @@ var parseXml = function (xml) {
         });
     });
 };
+var isTimeoutError = function (err) {
+    return err.code === 'ECONNABORTED' && err.message.indexOf('timeout') !== -1;
+};
 var headUrl = function (url) { return __awaiter(_this, void 0, void 0, function () {
     var result, err_1, statusOk, statusMsg;
     return __generator(this, function (_a) {
@@ -105,9 +108,6 @@ var headUrl = function (url) { return __awaiter(_this, void 0, void 0, function 
         }
     });
 }); };
-var isTimeoutError = function (err) {
-    return err.code === 'ECONNABORTED' && err.message.indexOf('timeout') !== -1;
-};
 var parseSitemap = function (url) { return __awaiter(_this, void 0, void 0, function () {
     var result, hasTimedOut, err_2, statusOk, response, data, err_3, isSitemap, isSitemapList, dataOk, statusMsg, msg, xmlValidMsg, type, urls, _i, urls_1, url_1, urls, _a, urls_2, url_2;
     return __generator(this, function (_b) {
