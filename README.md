@@ -6,7 +6,7 @@ If you give it a sitemap index URL which contains other sitemaps, it will parse 
 ## Usage
 
 ```bash
-$ node ./build/sitemap-check.js http://url-to-your-sitemap
+$ sitemap-check http://url-to-your-sitemap
 ```
 
 ## Options

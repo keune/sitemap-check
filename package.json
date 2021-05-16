@@ -18,10 +18,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
+  "bin": {
+    "sitemap-check": "./build/main.js"
+  },
   "keywords": [
     "sitemap",
     "sitemap-check"
   ],
   "author": "Ahmet Kun",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keune/sitemap-check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keune/sitemap-check/issues"
+  },
+  "homepage": "https://github.com/keune/sitemap-check#readme"
 }
